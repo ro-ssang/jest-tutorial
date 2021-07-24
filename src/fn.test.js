@@ -1,9 +1,18 @@
 const fn = require('./fn');
 
-test('이름과 나이를 전달받아서 객체를 반환해줘.', () => {
-  expect(fn.makeUser('Mike', 30)).toEqual({ name: 'Mike', age: 30 });
+// toBeNull
+// toBeUndefined
+// toBeDefined
+test('null은 null입니다.', () => {
+  expect(null).toBeNull();
 });
 
-test('이름과 나이를 전달받아서 객체를 반환해줘.', () => {
-  expect(fn.makeUser('Mike', 30)).toStrictEqual({ name: 'Mike', age: 30 });
+// toBeTruthy
+// toBeFalsy
+test('0은 false 입니다.', () => {
+  expect(fn.add(1, -1)).toBeFalsy();
+});
+
+test('비어있지 않은 문자열은 true 입니다.', () => {
+  expect(fn.add('hello', 'world')).toBeTruthy();
 });
