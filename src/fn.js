@@ -11,6 +11,14 @@ const fn = {
       throw Error('서버 에러...');
     }, 3000);
   },
+  getAge: () => {
+    const age = 30;
+    return new Promise((resolve, reject) => {
+      setTimeout(() => {
+        resolve(age);
+      }, 3000);
+    });
+  },
 };
 
 module.exports = fn;

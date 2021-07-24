@@ -1,14 +1,8 @@
 const fn = require('./fn');
 
-// 콜백 패턴
-test('3초 후에 받아온 이름은 Mike', (done) => {
-  function callback(name) {
-    try {
-      expect(name).toBe('Mike');
-      done();
-    } catch (error) {
-      done();
-    }
-  }
-  fn.getName(callback);
+// 프로미스 패턴 (return 해야 한다.)
+test('3초 후에 받아온 나이는 30', () => {
+  return fn.getAge().then((age) => {
+    expect(age).toBe(30);
+  });
 });
