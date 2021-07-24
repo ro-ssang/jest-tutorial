@@ -7,3 +7,4 @@
   3. toBeGreaterThan, toBeGreaterThanOrEqual, toBeLessThan, toBeLessThanOrEqual, toBeCloseTo
   4. toMatch
   5. toContain
+  6. toThrow

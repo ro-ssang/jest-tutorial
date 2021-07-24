@@ -1,8 +1,6 @@
 const fn = require('./fn');
 
-// toContain
-test('Mike가 있나요?', () => {
-  const user = 'Mike';
-  const userList = ['Tom', 'Mike', 'Kai'];
-  expect(userList).toContain(user);
+// toThrow
+test('이거 에러 나나요?', () => {
+  expect(() => fn.throwError()).toThrow('xx');
 });
