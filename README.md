@@ -8,3 +8,5 @@
   4. toMatch
   5. toContain
   6. toThrow
+- 비동기 코드 테스트
+  1. 콜백 패턴
