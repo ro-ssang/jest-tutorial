@@ -13,3 +13,4 @@
   2. 프로미스 패턴
   3. 프로미스 패턴(resovles, rejects Matcher)
   4. Async/Await 패턴
+  5. Async/Await 패턴(resovles, rejects Matcher)
