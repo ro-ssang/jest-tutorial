@@ -6,3 +6,4 @@
   2. toBeNull, toBeUndefined, toBeDefined, toBeTruthy, toBeFalsy
   3. toBeGreaterThan, toBeGreaterThanOrEqual, toBeLessThan, toBeLessThanOrEqual, toBeCloseTo
   4. toMatch
+  5. toContain
