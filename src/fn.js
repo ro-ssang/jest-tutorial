@@ -15,7 +15,8 @@ const fn = {
     const age = 30;
     return new Promise((resolve, reject) => {
       setTimeout(() => {
-        resolve(age);
+        // resolve(age);
+        reject('error');
       }, 3000);
     });
   },

@@ -11,3 +11,4 @@
 - 비동기 코드 테스트
   1. 콜백 패턴
   2. 프로미스 패턴
+  3. 프로미스 패턴(resovles, rejects Matcher)
