@@ -25,3 +25,4 @@
   3. results
   4. mockReturnValueOnce, mockReturnValue
   5. mockResolvedValue
+  6. mocking module
