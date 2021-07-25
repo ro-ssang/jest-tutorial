@@ -23,3 +23,4 @@
   1. 목 함수 생성, calls
   2. 목 함수 활용
   3. results
+  4. mockReturnValueOnce, mockReturnValue

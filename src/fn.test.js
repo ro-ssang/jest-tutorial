@@ -1,19 +1,16 @@
 // mock function
 
-const mockFn = jest.fn((num) => num + 1);
+const mockFn = jest.fn();
 
-mockFn(10);
-mockFn(20);
-mockFn(30);
+mockFn
+  .mockReturnValueOnce(true)
+  .mockReturnValueOnce(false)
+  .mockReturnValueOnce(true)
+  .mockReturnValueOnce(false)
+  .mockReturnValue(true);
 
-test('10에서 1 증가한 값이 반환됩니다.', () => {
-  expect(mockFn.mock.results[0].value).toBe(11);
-});
+const result = [1, 2, 3, 4, 5].filter((num) => mockFn(num));
 
-test('20에서 1 증가한 값이 반환됩니다.', () => {
-  expect(mockFn.mock.results[1].value).toBe(21);
-});
-
-test('30에서 1 증가한 값이 반환됩니다.', () => {
-  expect(mockFn.mock.results[2].value).toBe(31);
+test('홀수는 1, 3, 5', () => {
+  expect(result).toStrictEqual([1, 3, 5]);
 });
