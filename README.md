@@ -14,3 +14,5 @@
   3. 프로미스 패턴(resovles, rejects Matcher)
   4. Async/Await 패턴
   5. Async/Await 패턴(resovles, rejects Matcher)
+- 테스트 전후 작업
+  1. beforeEach, afterEach
