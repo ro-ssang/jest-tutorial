@@ -2,15 +2,10 @@
 
 const mockFn = jest.fn();
 
-mockFn
-  .mockReturnValueOnce(true)
-  .mockReturnValueOnce(false)
-  .mockReturnValueOnce(true)
-  .mockReturnValueOnce(false)
-  .mockReturnValue(true);
+mockFn.mockResolvedValue({ name: 'Mike' });
 
-const result = [1, 2, 3, 4, 5].filter((num) => mockFn(num));
-
-test('홀수는 1, 3, 5', () => {
-  expect(result).toStrictEqual([1, 3, 5]);
+test('받아온 이름은 Mike', () => {
+  return mockFn().then((res) => {
+    expect(res.name).toBe('Mike');
+  });
 });

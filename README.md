@@ -24,3 +24,4 @@
   2. 목 함수 활용
   3. results
   4. mockReturnValueOnce, mockReturnValue
+  5. mockResolvedValue
