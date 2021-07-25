@@ -20,6 +20,20 @@ const fn = {
       }, 3000);
     });
   },
+  connectUserDb: () => {
+    return new Promise((resolve, reject) => {
+      setTimeout(() => {
+        resolve({ name: 'Mike', age: 30, gender: 'male' });
+      }, 500);
+    });
+  },
+  disconnectDb: () => {
+    return new Promise((resolve, reject) => {
+      setTimeout(() => {
+        resolve();
+      }, 500);
+    });
+  },
 };
 
 module.exports = fn;

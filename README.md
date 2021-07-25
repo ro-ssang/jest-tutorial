@@ -16,3 +16,4 @@
   5. Async/Await 패턴(resovles, rejects Matcher)
 - 테스트 전후 작업
   1. beforeEach, afterEach
+  2. beforeAll, afterAll (DB에서 하나의 데이터를 가져오는 경우)
