@@ -1,23 +1,24 @@
 const fn = require('./fn');
 
-beforeAll(() => console.log('밖 beforeAll')); // 1
-beforeEach(() => console.log('밖 beforeEach')); // 2, 6
-afterEach(() => console.log('밖 afterEach')); // 4, 10
-afterAll(() => console.log('밖 afterAll')); // 12
+let num = 0;
 
-test('0 + 1 = 1', () => {
-  console.log('밖 test');
-  expect(fn.add(0, 1)).toBe(1); // 3
+test('0 더하기 1 은 1', () => {
+  expect(fn.add(num, 1)).toBe(1);
 });
 
-describe('Car 관련 작업', () => {
-  beforeAll(() => console.log('안 beforeAll')); // 5
-  beforeEach(() => console.log('안 beforeEach')); // 7
-  afterEach(() => console.log('안 afterEach')); // 9
-  afterAll(() => console.log('안 afterAll')); // 11
+test('0 더하기 2 은 2', () => {
+  expect(fn.add(num, 2)).toBe(2);
+});
 
-  test('0 + 1 = 1', () => {
-    console.log('안 test');
-    expect(fn.add(0, 1)).toBe(1); // 8
-  });
+test('0 더하기 3 은 3', () => {
+  expect(fn.add(num, 3)).toBe(3);
+});
+
+test.skip('0 더하기 4 은 4', () => {
+  expect(fn.add(num, 4)).toBe(4);
+  num = 10;
+});
+
+test.only('0 더하기 5 은 5', () => {
+  expect(fn.add(num, 5)).toBe(6);
 });
