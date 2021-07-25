@@ -19,3 +19,5 @@
   2. beforeAll, afterAll (DB에서 하나의 데이터를 가져오는 경우)
   3. beforeEach/beforeAll, afterEach/afterAll 작동 순서
   4. only, skip
+- 목 함수
+  1. 목 함수 생성, calls
