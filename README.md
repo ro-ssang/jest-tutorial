@@ -26,3 +26,4 @@
   4. mockReturnValueOnce, mockReturnValue
   5. mockResolvedValue
   6. mocking module
+  7. toBeCalled, toBeCalledTimes, toBeCalledWith, lastCalledWith
